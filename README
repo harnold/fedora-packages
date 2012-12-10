@@ -1,0 +1,5 @@
+This repository contains spec files and patches that can be used to build
+RPM packages for the Fedora distribution and some of its derivatives.
+
+All files in this repository are licensed under a variant of the BSD license;
+see the LICENSE file for details.
