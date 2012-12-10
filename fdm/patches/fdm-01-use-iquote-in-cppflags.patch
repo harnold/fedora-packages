@@ -1,0 +1,11 @@
+--- fdm-1.6.a/GNUmakefile	2012-12-10 17:38:30.809923366 +0100
++++ fdm-1.6.b/GNUmakefile	2012-12-10 17:38:41.754686086 +0100
+@@ -68,7 +68,7 @@
+ endif
+ 
+ OBJS= $(patsubst %.c,%.o,$(SRCS))
+-CPPFLAGS+= $(DEFS) -I. -I- $(INCDIRS)
++CPPFLAGS+= $(DEFS) -I. -iquote $(INCDIRS)
+ ifdef DEBUG
+ CFLAGS+= -g -ggdb -DDEBUG
+ LDFLAGS+= -rdynamic

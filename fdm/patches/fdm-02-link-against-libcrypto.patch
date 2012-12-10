@@ -1,0 +1,11 @@
+--- fdm-1.6.a/GNUmakefile	2012-12-10 17:40:14.897685655 +0100
++++ fdm-1.6.b/GNUmakefile	2012-12-10 17:40:25.899456926 +0100
+@@ -93,7 +93,7 @@
+ LIBS+= -lpcre
+ endif
+ 
+-LIBS+= -lssl -ltdb -lz
++LIBS+= -lssl -lcrypto -ltdb -lz
+ 
+ CLEANFILES= $(PROG) y.tab.c y.tab.h $(OBJS) .depend
+ 
